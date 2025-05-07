@@ -37,6 +37,7 @@ public class CustomersController {
         return customerService.getAllIndividualCustomers(page, size, sortBy, direction);
     }
 
+    
     @GetMapping("/corporate")
     @Operation(summary = "Get all corporate customers with pagination")
     public PageResponse<CorporateCustomerResponse> getAllCorporateCustomers(
